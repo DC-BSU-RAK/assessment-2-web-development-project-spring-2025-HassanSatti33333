@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+  font-family: "Press Start 2P", cursive, sans-serif;
+  color: #3a3a3a;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  transition: background 1s ease;
+  background: #3c7135;
+}
+
+nav {
+  background-color: #5e7c16;
+  padding: 10px 0;
+  text-align: center;
+  border: 3px solid #3b4a12;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 0 #3b4a12;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 16px;
+  background-color: #6e6e6e;
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0 #3b4a12;
+  display: inline-block;
+  transition: all 0.2s;
+}
+
+nav a:hover {
+  background-color: #3e3e3e;
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #3b4a12;
+}
+
+header {
+  text-align: center;
+  background-color: #7cb447;
+  border: 4px solid #5e7c16;
+  box-shadow: 8px 8px 0 #3b4a12;
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+header h1 {
+  color: #7cb447;
+  font-weight: 1000;
+  font-size: 48px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 3px #000000;
+  text-shadow: -3px -3px 0 #0a0a1a, 0px -3px 0 #0a0a1a, 3px -3px 0 #0a0a1a,
+    -3px 0px 0 #0a0a1a, 3px 0px 0 #0a0a1a, -3px 3px 0 #0a0a1a, 0px 3px 0 #0a0a1a,
+    3px 3px 0 #0a0a1a, 0 0 10px #26ff00, 0 0 20px #26ff00;
+  margin: 0;
+}
+
+header p {
+  color: #000000;
+  font-size: 18px;
+  text-shadow: 0 0 5px rgba(38, 255, 0, 0.5);
+  margin: 10px 0 0;
+}
+
+main {
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 4px solid #8b8b8b;
+  box-shadow: 8px 8px 0 #000000;
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.edition-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 30px 0;
+}
+
+.edition-card {
+  background-color: rgba(248, 248, 248, 0.9);
+  border: 3px solid #8b8b8b;
+  box-shadow: 5px 5px 0 #5e5e5e;
+  padding: 25px;
+  width: 100%;
+  max-width: 450px;
+  transition: all 0.3s;
+}
+
+.edition-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 8px 8px 0 #5e5e5e;
+}
+
+.edition-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.edition-header img {
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+.edition-header h3 {
+  color: #5e7c16;
+  font-size: 22px;
+  margin: 10px 0;
+  border-bottom: 2px solid #5e7c16;
+  padding-bottom: 10px;
+}
+
+.edition-features ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 15px 0;
+  border-bottom: 3px solid #5e7c16;
+}
+
+.edition-features li {
+  background-color: #e0e0e0;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-left: 5px solid #5e7c16;
+  font-size: 12px;
+}
+
+.edition-requirements {
+  background-color: #e0e0e0;
+  padding: 15px;
+  margin: 20px 0;
+  border-left: 5px solid #5e7c16;
+}
+
+.edition-requirements h4 {
+  color: #5e7c16;
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.download-btn {
+  background-color: #7cb447;
+  color: #000000;
+  border: 3px solid #5e7c16;
+  padding: 12px 25px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s;
+  box-shadow: 4px 4px 0 #3b4a12;
+  text-transform: uppercase;
+}
+
+.download-btn:hover {
+  background-color: #5e7c16;
+  color: #ffffff;
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 #3b4a12;
+}
+
+.edition-comparison {
+  margin: 40px auto;
+  max-width: 800px;
+  background-color: rgba(248, 248, 248, 0.9);
+  border: 3px solid #8b5a2b;
+  padding: 20px;
+  box-shadow: 5px 5px 0 #5e5e5e;
+}
+
+.edition-comparison h3 {
+  color: #8b5a2b;
+  border-bottom: 3px solid #8b5a2b;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.edition-comparison table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.edition-comparison th,
+.edition-comparison td {
+  border: 2px solid #8b5a2b;
+  padding: 12px;
+  text-align: left;
+}
+
+.edition-comparison th {
+  background-color: rgba(139, 90, 43, 0.2);
+  color: #8b5a2b;
+}
+
+.edition-comparison tr:nth-child(even) {
+  background-color: rgba(248, 248, 248, 0.7);
+}
+
+.faq-item {
+  background-color: rgba(248, 248, 248, 0.9);
+  border: 3px solid #4a4a4a;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 0 #5e5e5e;
+}
+
+.faq-item h3 {
+  color: #4a4a4a;
+  margin-top: 0;
+  font-size: 16px;
+  border-bottom: 2px solid #4a4a4a;
+  padding-bottom: 5px;
+}
+
+footer {
+  text-align: center;
+  background-color: #4a4a4a;
+  color: #fff;
+  padding: 15px 0;
+  font-size: 12px;
+  border: 3px solid #2d2d2d;
+  box-shadow: 8px 8px 0 #000000;
+  margin-top: 20px;
+}
+
+.disclaimer {
+  font-size: 10px;
+  margin-top: 10px;
+  color: #cccccc;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-image: radial-gradient(
+      circle at 10% 20%,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    ),
+    radial-gradient(
+      circle at 90% 30%,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    ),
+    radial-gradient(
+      circle at 30% 80%,
+      rgba(255, 255, 255, 0.1) 1px,
+      transparent 1px
+    );
+  background-size: 50px 50px;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  nav a {
+    font-size: 12px;
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  .edition-card {
+    padding: 15px;
+  }
+
+  .edition-header img {
+    height: 60px;
+  }
+
+  .download-btn {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .edition-comparison table {
+    font-size: 10px;
+  }
+}

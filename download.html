@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Download Minecraft</title>
+    <link rel="stylesheet" href="download.css" />
+    <script src="javascript.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#about-section">About</a>
+      <a href="rating.html">Rating</a>
+      <a href="reviews.html">User Reviews</a>
+      <a href="impact.html">Impact</a>
+      <a href="download.html">Download</a>
+    </nav>
+
+    <header>
+      <h1>Download Minecraft</h1>
+      <p>Choose your edition and start your adventure today!</p>
+    </header>
+
+    <main>
+      <section id="edition-choice">
+        <h2>Select Your Edition</h2>
+
+        <div class="edition-container">
+          <article class="edition-card" id="java-edition">
+            <div class="edition-header">
+              <img src="images/Java.jpg" alt="Java Edition Logo" />
+              <h3>Minecraft: Java Edition</h3>
+            </div>
+            <div class="edition-features">
+              <ul>
+                <li>Original PC version</li>
+                <li>Access to mods and custom servers</li>
+                <li>Frequent snapshots of upcoming features</li>
+                <li>Cross-play with other Java Edition players</li>
+                <li>Best for technical players and modders</li>
+              </ul>
+            </div>
+            <div class="edition-requirements">
+              <h4>System Requirements:</h4>
+              <p>Windows 10/11, macOS, or Linux</p>
+              <p>Minimum 4GB RAM</p>
+            </div>
+            <button class="download-btn" onclick="downloadJava()">
+              Download Java Edition
+            </button>
+          </article>
+
+          <article class="edition-card" id="bedrock-edition">
+            <div class="edition-header">
+              <img src="images/Bedrock.jpg" alt="Bedrock Edition Logo" />
+              <h3>Minecraft: Bedrock Edition</h3>
+            </div>
+            <div class="edition-features">
+              <ul>
+                <li>Unified version across devices</li>
+                <li>Cross-play with consoles and mobile</li>
+                <li>Access to Minecraft Marketplace</li>
+                <li>Better performance on lower-end devices</li>
+                <li>Best for casual players and families</li>
+              </ul>
+            </div>
+            <div class="edition-requirements">
+              <h4>Available Platforms:</h4>
+              <p>Windows 10/11, Xbox, PlayStation, Switch, Mobile</p>
+              <li style="color: #e0e0e0"></li>
+            </div>
+            <button class="download-btn" onclick="downloadBedrock()">
+              Download Bedrock Edition
+            </button>
+          </article>
+        </div>
+
+        <div class="edition-comparison">
+          <h3>Not sure which to choose?</h3>
+          <table>
+            <tr>
+              <th>Feature</th>
+              <th>Java Edition</th>
+              <th>Bedrock Edition</th>
+            </tr>
+            <tr>
+              <td>Mod Support</td>
+              <td>✔ Extensive</td>
+              <td>✖ Limited</td>
+            </tr>
+            <tr>
+              <td>Cross-Platform Play</td>
+              <td>✖ Java only</td>
+              <td>✔ All platforms</td>
+            </tr>
+            <tr>
+              <td>Performance</td>
+              <td>Requires better hardware</td>
+              <td>Optimized for all devices</td>
+            </tr>
+            <tr>
+              <td>Price</td>
+              <td>$26.95</td>
+              <td>$29.99 (or free with Game Pass)</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <article class="faq-item">
+          <h3>Can I get both editions?</h3>
+          <p>
+            Yes! If you buy Java Edition from the official Minecraft site, you
+            get Bedrock Edition for Windows for free, and vice versa.
+          </p>
+        </article>
+        <article class="faq-item">
+          <h3>Which edition updates first?</h3>
+          <p>
+            Both editions now receive updates at the same time as part of the
+            "Better Together" initiative.
+          </p>
+        </article>
+        <article class="faq-item">
+          <h3>Can I transfer my worlds between editions?</h3>
+          <p>
+            There are third-party tools available, but official world transfer
+            between Java and Bedrock is limited.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>2025 BSU Assignment | Hassan Abdullah</p>
+      <p class="disclaimer">
+        This is a student project. Official downloads available at
+        <a href="https://www.minecraft.net" target="_blank">minecraft.net</a>
+      </p>
+    </footer>
+
+    <script>
+      function downloadJava() {
+        alert("Redirecting to official Minecraft Java Edition download...");
+      }
+
+      function downloadBedrock() {
+        alert("Redirecting to official Minecraft Bedrock Edition download...");
+      }
+    </script>
+  </body>
+</html>
